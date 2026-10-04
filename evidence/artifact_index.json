@@ -224,6 +224,21 @@
       "seed": 42,
       "note": "Original fixed +x 0.75 m/s, 500-step gait gate passed; all frames actually viewed. Not an all-turn or all-random-start success claim."
     },
+    "steering_clockwise": {
+      "path": "media/steering_clockwise.mp4",
+      "sha256": "aa10811efb06d4df79a7176d4a0c39ec0e25a54587cecd0a0ad04f6b969661a9",
+      "frames": 1000,
+      "fps": 50.0,
+      "duration_seconds": 20.0,
+      "width": 960,
+      "height": 720,
+      "gif_preview_start_seconds": 0,
+      "gif_preview_duration_seconds": 20,
+      "checkpoint": "model_36991",
+      "seed": 42,
+      "camera_distance_m": 3.10,
+      "note": "Supplemental world-direction sequence +x, +x, -y, -x, +y: three clockwise heading transitions. All 1000 frames actually viewed. Same policy and physical evaluation; wider display camera only. Not all-turn strict foot-gate or precision-control success."
+    },
     "celebration": {
       "path": "media/celebration.mp4",
       "sha256": "cad04b424a2d4e7c1cf4d31c0b8ab73e16d4d4985347ee7b365d43eea56e2cca",

@@ -22,7 +22,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--fps", type=float, default=50.0)
     parser.add_argument("--width", type=int, default=960)
     parser.add_argument("--height", type=int, default=720)
-    return parser.parse_args()
+    parser.add_argument("--camera-distance", type=float, default=2.75,
+                        help="Display-only camera distance; recorded states are unchanged.")
+    args = parser.parse_args()
+    if not np.isfinite(args.camera_distance) or args.camera_distance <= 0:
+        parser.error("--camera-distance must be finite and positive")
+    return args
 
 
 def build_scene_xml(source: Path, target: Path) -> None:
@@ -129,7 +134,7 @@ def main() -> None:
 
         camera = mujoco.MjvCamera()
         camera.type = mujoco.mjtCamera.mjCAMERA_FREE
-        camera.distance = 2.75
+        camera.distance = args.camera_distance
         camera.azimuth = 135.0
         camera.elevation = -14.0
         renderer = mujoco.Renderer(model, height=args.height, width=args.width)

@@ -19,6 +19,8 @@ python scripts/build_showcase.py
 
 大型模型/动作包使用版本化 Release，不塞进 Git 历史。第三方模拟器、人体模型和运行库从官方渠道按指定版本安装；它们各自的授权条件仍然适用。[GitHub Release 说明](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
 
+当前默认索引为`restore-20261004-walk12`：四个核心包已实际重新下载并核对，下载后的36991通过1000步转向和原500步直行门槛。模型/动作大包是版本快照，后续在线验证与顺时针补充在恢复库Git，最新展示及镜头参数在本展示库Git；两库配合恢复，不覆盖旧Release。具体执行范围和Native安装复用限制见恢复库[RESTORE_VALIDATION.md](https://github.com/jkl-ddl/humanoid-robotics-reproduction/blob/main/RESTORE_VALIDATION.md)。
+
 ## 实际用过的三条运行路线
 
 | 工作 | 历史运行路线 | 恢复时保持什么 |

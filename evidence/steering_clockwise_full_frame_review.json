@@ -1,0 +1,206 @@
+{
+  "video": "steering_walk12_slip10_36991_clockwise_v2.mp4",
+  "sha256": "aa10811efb06d4df79a7176d4a0c39ec0e25a54587cecd0a0ad04f6b969661a9",
+  "frames_expected": 1000,
+  "frames_decoded": 1000,
+  "fps": 50.0,
+  "telemetry": "policy_states.npz",
+  "sheets": [
+    {
+      "file": "frames_0000_0063.jpg",
+      "first_frame": 0,
+      "last_frame": 63
+    },
+    {
+      "file": "frames_0064_0127.jpg",
+      "first_frame": 64,
+      "last_frame": 127
+    },
+    {
+      "file": "frames_0128_0191.jpg",
+      "first_frame": 128,
+      "last_frame": 191
+    },
+    {
+      "file": "frames_0192_0255.jpg",
+      "first_frame": 192,
+      "last_frame": 255
+    },
+    {
+      "file": "frames_0256_0319.jpg",
+      "first_frame": 256,
+      "last_frame": 319
+    },
+    {
+      "file": "frames_0320_0383.jpg",
+      "first_frame": 320,
+      "last_frame": 383
+    },
+    {
+      "file": "frames_0384_0447.jpg",
+      "first_frame": 384,
+      "last_frame": 447
+    },
+    {
+      "file": "frames_0448_0511.jpg",
+      "first_frame": 448,
+      "last_frame": 511
+    },
+    {
+      "file": "frames_0512_0575.jpg",
+      "first_frame": 512,
+      "last_frame": 575
+    },
+    {
+      "file": "frames_0576_0639.jpg",
+      "first_frame": 576,
+      "last_frame": 639
+    },
+    {
+      "file": "frames_0640_0703.jpg",
+      "first_frame": 640,
+      "last_frame": 703
+    },
+    {
+      "file": "frames_0704_0767.jpg",
+      "first_frame": 704,
+      "last_frame": 767
+    },
+    {
+      "file": "frames_0768_0831.jpg",
+      "first_frame": 768,
+      "last_frame": 831
+    },
+    {
+      "file": "frames_0832_0895.jpg",
+      "first_frame": 832,
+      "last_frame": 895
+    },
+    {
+      "file": "frames_0896_0959.jpg",
+      "first_frame": 896,
+      "last_frame": 959
+    },
+    {
+      "file": "frames_0960_0999.jpg",
+      "first_frame": 960,
+      "last_frame": 999
+    }
+  ],
+  "visual_review_status": "all_1000_frames_viewed_bounded_clockwise_steering_selected",
+  "visual_review_notes": [
+    "All 16 consecutive sheets covering frames 0-999 were actually viewed, followed by full-resolution frames 0, 450, 650 and 850.",
+    "Continuous alternating gait and three clockwise heading transitions are visible; no fall, reset splice or non-finite state was observed.",
+    "Camera distance 3.10 keeps the complete feet in view; this is a display-only change to the same recorded policy states, not a policy or physics change.",
+    "Initial crouch/root pitch about 25.34 degrees is retained. Turn transients, underspeed and residual slip remain; not all-turn strict gait-gate or precision-control success."
+  ],
+  "thumbnail_warning": "Consecutive full coverage, magnify flagged frames separately.",
+  "nonfinite_recorded_states": {},
+  "metric_summaries": {
+    "quat_norm_error": {
+      "min": 0.0,
+      "median": 0.0,
+      "p95": 1.1920928955078125e-07,
+      "max": 1.1920928955078125e-07,
+      "maximum_frame": 14,
+      "finite_count": 1000
+    },
+    "root_tilt_deg": {
+      "min": 5.7236151695251465,
+      "median": 8.934041023254395,
+      "p95": 10.580890655517578,
+      "max": 25.870046615600586,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "root_pitch_deg": {
+      "min": 5.4417724609375,
+      "median": 8.707784175872803,
+      "p95": 10.541326761245728,
+      "max": 25.335554122924805,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "root_roll_deg": {
+      "min": -1.6269136667251587,
+      "median": 1.4853363037109375,
+      "p95": 3.4960683345794674,
+      "max": 6.2521843910217285,
+      "maximum_frame": 3,
+      "finite_count": 1000
+    },
+    "root_height_m": {
+      "min": 0.9805288314819336,
+      "median": 1.0002156496047974,
+      "p95": 1.0084607481956482,
+      "max": 1.05519437789917,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "root_xy_displacement_from_start_m": {
+      "min": 0.0,
+      "median": 5.107424974441528,
+      "p95": 7.295589852333069,
+      "max": 7.36671257019043,
+      "maximum_frame": 656,
+      "finite_count": 1000
+    },
+    "root_speed_mps": {
+      "min": 0.40010637044906616,
+      "median": 0.6825140416622162,
+      "p95": 0.9783471792936325,
+      "max": 1.1654736995697021,
+      "maximum_frame": 369,
+      "finite_count": 1000
+    },
+    "joint_max_abs_velocity_proxy_rad_s": {
+      "min": 0.7304037809371948,
+      "median": 1.9650951027870178,
+      "p95": 4.533796262741088,
+      "max": 9.993775367736816,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "max_xml_joint_limit_excess_rad": {
+      "min": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "left_fk_site_height_m": {
+      "min": 0.06223112963803454,
+      "median": 0.08617491491333609,
+      "p95": 0.14547861066039774,
+      "max": 0.2018065716815332,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "left_fk_site_speed_xy_proxy_mps": {
+      "min": 0.000399145072190015,
+      "median": 0.23706526847880785,
+      "p95": 2.2997598771279018,
+      "max": 3.6354240626006544,
+      "maximum_frame": 453,
+      "finite_count": 1000
+    },
+    "right_fk_site_height_m": {
+      "min": 0.06059929157820149,
+      "median": 0.07791924495872748,
+      "p95": 0.15014671785893627,
+      "max": 0.16490306680201616,
+      "maximum_frame": 161,
+      "finite_count": 1000
+    },
+    "right_fk_site_speed_xy_proxy_mps": {
+      "min": 0.00015042029835357352,
+      "median": 0.2759901641577461,
+      "p95": 2.041440800858671,
+      "max": 3.22674661004271,
+      "maximum_frame": 20,
+      "finite_count": 1000
+    }
+  },
+  "fk_note": "Static XML site/limit diagnostics; no physics replay or true contact estimate."
+}

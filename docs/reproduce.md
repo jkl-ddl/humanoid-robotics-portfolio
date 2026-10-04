@@ -33,11 +33,12 @@ python scripts/build_showcase.py
 
 ## 源码入口
 
-- 视频动作管线：[原公开仓库](https://github.com/jkl-ddl/gvhmr-gmr-beyondmimic-reproducible)，克隆后使用 `git lfs pull` 获取其已授权证据。
+- 视频动作管线：[迁入的原管线代码](../code/pipeline/)，保留固定上游版本。旧仓库Git/LFS和原始资料进入私有备份；公开入口不要求访问已收起的旧项目。
 - 机器人与转向关键适配：[code](../code/README.md)。这些是项目特定文件，不是完整上游 fork；完整适配源码使用恢复包。
 - 固定起点动作验证：[eval_t800_tracking.py](../code/eval_t800_tracking.py)，保留失败终止，明确随机扰动关闭与延长 time-out 的条件。
 - 策略状态重渲染：[render_policy_states.py](../code/render_policy_states.py)。不需要训练，但需要官方 XML/mesh/texture 和匹配关节名称。不能把重渲染称作 MuJoCo 重新执行策略的 sim2sim。
 - 曲线：[build_showcase.py](../scripts/build_showcase.py)。默认从公开 CSV 重画；`--collect` 仅用于把本机已有日志/视频收集成展示文件，不触发训练。
+- 训练配置/命令：[training.md](training.md)，集中列出四项实际覆盖、公开入口及需要授权材料的区别。
 
 Native tracking须从匹配的EngineAI仓库根目录启动，因为T800 USD使用相对路径。恢复库的`run_action.ps1`已处理工作目录；从其他目录直接调用脚本会在模型执行前报`USD file not found`，不应因此改资产、训练配置或终止阈值。
 

@@ -11,3 +11,6 @@ datasets/
 *.usd
 *.usda
 *.usdc
+vendor/
+new-training/
+new-evaluation/

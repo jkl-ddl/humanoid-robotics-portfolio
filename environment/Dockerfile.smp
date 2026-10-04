@@ -1,0 +1,11 @@
+FROM pytorch/pytorch:2.7.0-cuda12.8-cudnn9-runtime@sha256:7db0e1bf4b1ac274ea09cf6358ab516f8a5c7d3d0e02311bed445f7e236a5d80
+
+# RSL-RL imports GitPython; Torch Inductor compiles a C launcher when the frozen
+# prior uses compile_model=True. Neither dependency is in the runtime base.
+RUN apt-get update && apt-get install -y --no-install-recommends git build-essential
+
+# Rebuild from online packages instead of depending on this machine's mounted
+# Python package directories. The fixed source snapshots are mounted read-only.
+COPY smp-runtime.txt /tmp/smp-runtime.txt
+RUN python -m pip install --no-cache-dir -r /tmp/smp-runtime.txt
+ENV MUJOCO_GL=disable

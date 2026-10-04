@@ -11,7 +11,7 @@
 - 足底接触力 >1 N：左 225/236 帧，右 213/236 帧。
 - 参考动作复用 GMR 的逐帧落地处理，调整 root 高度，不修改关节轨迹。
 
-训练使用 GPU PhysX，最终记录使用 CPU PhysX 恢复路径：当时 Docker/WSL 图形互操作失效，恢复运行保留物理、碰撞、终止与策略。不能把两种运行路径当成完全相同的 GPU 复验。原始范围见 [验收 JSON](../evidence/badminton_acceptance.json) 和 [旧仓库证据](https://github.com/jkl-ddl/gvhmr-gmr-beyondmimic-reproducible/tree/main/evidence/badminton_v2_final)。
+训练使用 GPU PhysX，最终记录使用 CPU PhysX 恢复路径：当时 Docker/WSL 图形互操作失效，恢复运行保留物理、碰撞、终止与策略。不能把两种运行路径当成完全相同的 GPU 复验。公开范围见 [验收 JSON](../evidence/badminton_acceptance.json) 和 [训练记录](training.md)；旧管线原始Git/LFS和输入资料保存在私有归档。
 
 ## T800：行走与自然转向
 

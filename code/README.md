@@ -2,6 +2,8 @@
 
 这里保留项目特定的适配/评估工具，不复制整个上游算法库：
 
+- [pipeline](pipeline/)：原GVHMR→GMR→BeyondMimic管线的源码固定、环境及数据检查工具。
+
 - `t800_asset.py`：25关节顺序、动作尺度、执行器与 Native SDK XML 接入。
 - `steering_env_cfg.py`：T800 指令任务、官方足底 site/contact 传感与 MjLab 奖励项。
 - `eval_t800_steering.py`：五段固定指令、seed42、平滑切换；每步显式刷新并核对actor指令，在首次终止前记录真实接触/速度/姿态与joint/root状态，拒绝将auto-reset后的姿态拼接进视频。GPU物理不承诺跨机器逐字节确定性。
@@ -11,6 +13,8 @@
 - `render_policy_states.py`：只渲染已记录的策略姿态与地面，不执行或替代策略。
 
 这些文件对应的完整依赖与修改后的工作源码在本人恢复归档中。单独复制转向配置到未经适配的 SUZ 主分支不能保证运行：它依赖本地 T800 化的基础环境、特征与事件实现。不要把这一目录称作独立可训练框架。
+
+训练/回放入口集中在仓库`scripts/`，Linux运行配方在`environment/`，实际选定参数及调用方式见[训练说明](../docs/training.md)。只移入已有工具，未为整合另造训练算法。
 
 `render_policy_states.py` 可在安装 MuJoCo、NumPy、ImageIO、Pillow 后独立使用；XML 从官方 Native SDK 获取。示例：
 

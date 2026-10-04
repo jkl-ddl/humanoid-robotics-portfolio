@@ -6,6 +6,8 @@
 
 这里记录的是 **G1 / EngineAI T800 的仿真实验**，不是原创算法、完整导航系统或实机部署成果。
 
+这是一个项目下的四项子任务。工作路径为：**开源复现 → 数据/机器人适配 → 策略训练与调参 → 仿真验收 → 成果归档**。
+
 ## 先看成果
 
 | G1：羽毛球风格动作跟踪 | T800：行走与连续转向 |
@@ -19,6 +21,8 @@
 | [完整视频](media/celebration.mp4) · [训练曲线](media/celebration_training.png) | [完整视频](media/taunt.mp4) · [训练曲线](media/taunt_training.png) |
 
 GIF 是原始回放视频的预览，不是生成动画。完整 MP4、抽帧和指标在仓库内；GitHub 如果不能内嵌播放，可点击 **View raw / Download** 下载。动作视频来自训练策略的真实状态记录，再用官方 T800 外观和地面重渲染，不是把参考动作直接当策略输出。
+
+想核对过程，可以直接看：[训练配置、命令和曲线](docs/training.md) · [实际结果](docs/results.md) · [关键代码](code/README.md) · [问题与心得](docs/lessons.md)。
 
 ## 我做了什么
 
@@ -47,7 +51,7 @@ GIF 是原始回放视频的预览，不是生成动画。完整 MP4、抽帧和
 
 - [关键适配代码](code/)：T800 资产/动作尺度、转向配置、确定性评估、动作数据映射和策略状态渲染。
 - [恢复与运行说明](docs/reproduce.md)：看视频、重画曲线、下载完整材料、恢复回放与重新训练。
-- [原视频到机器人管线仓库](https://github.com/jkl-ddl/gvhmr-gmr-beyondmimic-reproducible)：保留原有脚本、版本记录和已授权证据。
+- [视频到机器人原管线代码](code/pipeline/)：迁入原有源码固定、环境与数据检查工具；旧仓库作为后台存档，不再拆成重复公开项目。
 - [本人完整恢复归档](https://github.com/jkl-ddl/humanoid-robotics-reproduction)：私有 Release 保存匹配的源码、参考动作、选定模型和原始日志；避免把许可未确认的数据混入公开仓库。访问需本人的 GitHub 权限。
 
 当前`restore-20261004-walk12`四个核心包已从GitHub重新下载、核对SHA256并安全解压；下载后的36991再次完成1000步转向和500步固定0.75m/s验收，原直行门槛仍通过。验证记录见恢复库[RESTORE_VALIDATION.md](https://github.com/jkl-ddl/humanoid-robotics-reproduction/blob/main/RESTORE_VALIDATION.md)。SMP运行镜像从官方基础镜像和在线依赖重建；Native Isaac仍复用已有安装，不声称全新电脑依赖安装已经测试。

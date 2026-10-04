@@ -1,0 +1,32 @@
+{
+  "checkpoint": "model_19999.pt",
+  "motion": "dance_t800.npz",
+  "seed": 42,
+  "start_frame": 0,
+  "requested_frames": 1054,
+  "continuous_frames_before_first_termination": 1054,
+  "control_dt": 0.02,
+  "first_termination": null,
+  "active_termination_terms": [
+    "time_out",
+    "anchor_pos",
+    "anchor_ori",
+    "ee_body_pos"
+  ],
+  "failure_resets_disabled": [],
+  "reset_cache_refreshed_at_same_reference_frame": true,
+  "time_horizon_extended_to_one_motion": true,
+  "error_max": {
+    "error_anchor_pos": 0.23486214876174927,
+    "error_anchor_rot": 0.38354530930519104,
+    "error_body_pos": 0.08827009797096252,
+    "error_joint_pos": 1.394461750984192
+  },
+  "error_mean": {
+    "error_anchor_pos": 0.13796285597564464,
+    "error_anchor_rot": 0.08682592201901317,
+    "error_body_pos": 0.05375184673738244,
+    "error_joint_pos": 0.7935265425691626
+  },
+  "all_recorded_states_finite": true
+}

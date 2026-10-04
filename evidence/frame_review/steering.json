@@ -1,0 +1,202 @@
+{
+  "video": "steering_vel2_33495.mp4",
+  "sha256": "59170d707d014da153ae81790d47b4fd792ccefe3af2ffb805dba902e2dd334f",
+  "frames_expected": 1000,
+  "frames_decoded": 1000,
+  "fps": 50.0,
+  "telemetry": "policy_states.npz",
+  "sheets": [
+    {
+      "file": "frames_0000_0063.jpg",
+      "first_frame": 0,
+      "last_frame": 63
+    },
+    {
+      "file": "frames_0064_0127.jpg",
+      "first_frame": 64,
+      "last_frame": 127
+    },
+    {
+      "file": "frames_0128_0191.jpg",
+      "first_frame": 128,
+      "last_frame": 191
+    },
+    {
+      "file": "frames_0192_0255.jpg",
+      "first_frame": 192,
+      "last_frame": 255
+    },
+    {
+      "file": "frames_0256_0319.jpg",
+      "first_frame": 256,
+      "last_frame": 319
+    },
+    {
+      "file": "frames_0320_0383.jpg",
+      "first_frame": 320,
+      "last_frame": 383
+    },
+    {
+      "file": "frames_0384_0447.jpg",
+      "first_frame": 384,
+      "last_frame": 447
+    },
+    {
+      "file": "frames_0448_0511.jpg",
+      "first_frame": 448,
+      "last_frame": 511
+    },
+    {
+      "file": "frames_0512_0575.jpg",
+      "first_frame": 512,
+      "last_frame": 575
+    },
+    {
+      "file": "frames_0576_0639.jpg",
+      "first_frame": 576,
+      "last_frame": 639
+    },
+    {
+      "file": "frames_0640_0703.jpg",
+      "first_frame": 640,
+      "last_frame": 703
+    },
+    {
+      "file": "frames_0704_0767.jpg",
+      "first_frame": 704,
+      "last_frame": 767
+    },
+    {
+      "file": "frames_0768_0831.jpg",
+      "first_frame": 768,
+      "last_frame": 831
+    },
+    {
+      "file": "frames_0832_0895.jpg",
+      "first_frame": 832,
+      "last_frame": 895
+    },
+    {
+      "file": "frames_0896_0959.jpg",
+      "first_frame": 896,
+      "last_frame": 959
+    },
+    {
+      "file": "frames_0960_0999.jpg",
+      "first_frame": 960,
+      "last_frame": 999
+    }
+  ],
+  "visual_review_status": "reviewed_all_1000_frames_accepted_bounded_simulation_demo",
+  "visual_review_notes": "All 16 consecutive sheets / 1000 frames actually inspected, including all direction transitions. Visible alternating stepping throughout, no visible fall or reset splice. More upright and reduced turn arm abduction than the no-arm candidate; modest pivot/short steps and contact slip remain. Not precision speed control, zero-slip certification, all-random-start robustness or real-robot safety.",
+  "shoulder_roll_diagnostics_deg": {"left_straight_p95": 24.6949, "right_straight_p95": 21.0159, "left_turn_p95": 27.3981, "right_turn_p95": 23.0121, "left_max": 31.4238, "right_max": 24.7330},
+  "thumbnail_warning": "Consecutive full coverage, magnify flagged frames separately.",
+  "nonfinite_recorded_states": {},
+  "metric_summaries": {
+    "quat_norm_error": {
+      "min": 0.0,
+      "median": 0.0,
+      "p95": 1.1920928955078125e-07,
+      "max": 1.1920928955078125e-07,
+      "maximum_frame": 17,
+      "finite_count": 1000
+    },
+    "root_tilt_deg": {
+      "min": 1.6337460279464722,
+      "median": 7.300638437271118,
+      "p95": 9.84836664199829,
+      "max": 25.788599014282227,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "root_pitch_deg": {
+      "min": 1.451313853263855,
+      "median": 7.174852132797241,
+      "p95": 9.717266702651976,
+      "max": 25.250083923339844,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "root_roll_deg": {
+      "min": -2.8021326065063477,
+      "median": 0.024742674082517624,
+      "p95": 2.2243713855743397,
+      "max": 6.205167770385742,
+      "maximum_frame": 9,
+      "finite_count": 1000
+    },
+    "root_height_m": {
+      "min": 0.9741551876068115,
+      "median": 0.998963862657547,
+      "p95": 1.0044090926647187,
+      "max": 1.054976463317871,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "root_xy_displacement_from_start_m": {
+      "min": 0.0,
+      "median": 4.803419351577759,
+      "p95": 6.535171842575073,
+      "max": 6.590850830078125,
+      "maximum_frame": 648,
+      "finite_count": 1000
+    },
+    "root_speed_mps": {
+      "min": 0.1390102207660675,
+      "median": 0.5981566309928894,
+      "p95": 0.9580360800027847,
+      "max": 1.1503561735153198,
+      "maximum_frame": 409,
+      "finite_count": 1000
+    },
+    "joint_max_abs_velocity_proxy_rad_s": {
+      "min": 0.7182458639144897,
+      "median": 2.0367075204849243,
+      "p95": 4.806370449066161,
+      "max": 9.172089576721191,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "max_xml_joint_limit_excess_rad": {
+      "min": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "left_fk_site_height_m": {
+      "min": 0.06198913664398533,
+      "median": 0.07661338151054935,
+      "p95": 0.13692690308157165,
+      "max": 0.20217655302273901,
+      "maximum_frame": 0,
+      "finite_count": 1000
+    },
+    "left_fk_site_speed_xy_proxy_mps": {
+      "min": 0.0007013931264504676,
+      "median": 0.18785841321561644,
+      "p95": 2.212472856453204,
+      "max": 3.2531033272908942,
+      "maximum_frame": 17,
+      "finite_count": 1000
+    },
+    "right_fk_site_height_m": {
+      "min": 0.06015870486003558,
+      "median": 0.07523608965367574,
+      "p95": 0.14675715379261967,
+      "max": 0.15870038071924025,
+      "maximum_frame": 989,
+      "finite_count": 1000
+    },
+    "right_fk_site_speed_xy_proxy_mps": {
+      "min": 0.00027378562264339645,
+      "median": 0.26360228022279597,
+      "p95": 2.0673635229330065,
+      "max": 2.877980299625981,
+      "maximum_frame": 27,
+      "finite_count": 1000
+    }
+  },
+  "fk_note": "Static XML site/limit diagnostics; no physics replay or true contact estimate."
+}

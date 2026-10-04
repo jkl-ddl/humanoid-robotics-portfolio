@@ -1,0 +1,146 @@
+{
+  "checkpoint": "model_33495.pt",
+  "seed": 42,
+  "step_dt": 0.02,
+  "steps_per_command": 200,
+  "transition_steps": 50,
+  "first_termination": null,
+  "continuous_steps_before_first_termination": 1000,
+  "requested_steps": 1000,
+  "command_observation_refreshed_before_policy": true,
+  "command_observation_max_error": 0.0,
+  "random_command_resampling_disabled": true,
+  "segments": [
+    {
+      "segment": "forward_0.5",
+      "command_speed": 0.5,
+      "mean_projected_speed": 0.538162382543087,
+      "mean_velocity_error": 0.19246694887056948,
+      "mean_face_dot": 0.9992787384986878,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 9.172205524047644,
+      "torso_pitch_abs_p95_deg": 18.847623561799622,
+      "torso_roll_abs_p95_deg": 5.364269680484378,
+      "foot_clearance_p95_m": [
+        0.07178483158349991,
+        0.07885154187679289
+      ],
+      "foot_separation_command_p95_m": 0.3100431203842163,
+      "foot_contact_fraction": [
+        0.62,
+        0.58
+      ],
+      "both_feet_contact_fraction": 0.215,
+      "foot_contact_slip_mean_mps": [
+        0.11695332872594948,
+        0.07849808241710356
+      ]
+    },
+    {
+      "segment": "forward_1.0",
+      "command_speed": 1.0,
+      "mean_projected_speed": 0.7225801108777523,
+      "mean_velocity_error": 0.3076666571572423,
+      "mean_face_dot": 0.9991239178180694,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 7.4272413048111385,
+      "torso_pitch_abs_p95_deg": 9.28218879029929,
+      "torso_roll_abs_p95_deg": 2.542634277565395,
+      "foot_clearance_p95_m": [
+        0.08253887891769404,
+        0.08442594334483146
+      ],
+      "foot_separation_command_p95_m": 0.42872387170791626,
+      "foot_contact_fraction": [
+        0.585,
+        0.525
+      ],
+      "both_feet_contact_fraction": 0.11,
+      "foot_contact_slip_mean_mps": [
+        0.09757107539668591,
+        0.09594621806117218
+      ]
+    },
+    {
+      "segment": "left_0.75",
+      "command_speed": 0.75,
+      "mean_projected_speed": 0.5596957552060485,
+      "mean_velocity_error": 0.37628352906554935,
+      "mean_face_dot": 0.8599499487876892,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 6.7860173932303995,
+      "torso_pitch_abs_p95_deg": 9.861275237332741,
+      "torso_roll_abs_p95_deg": 2.11785330848242,
+      "foot_clearance_p95_m": [
+        0.07554334923624992,
+        0.08170253708958625
+      ],
+      "foot_separation_command_p95_m": 0.3410220727324483,
+      "foot_contact_fraction": [
+        0.65,
+        0.555
+      ],
+      "both_feet_contact_fraction": 0.205,
+      "foot_contact_slip_mean_mps": [
+        0.13415639834442677,
+        0.11623063525982066
+      ]
+    },
+    {
+      "segment": "backward_0.75",
+      "command_speed": 0.75,
+      "mean_projected_speed": 0.41828892355784775,
+      "mean_velocity_error": 0.4304804325848818,
+      "mean_face_dot": 0.8257027570903301,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 6.002740922843157,
+      "torso_pitch_abs_p95_deg": 8.329687107472694,
+      "torso_roll_abs_p95_deg": 2.155864912039128,
+      "foot_clearance_p95_m": [
+        0.0678924299776554,
+        0.08807981684803962
+      ],
+      "foot_separation_command_p95_m": 0.373556953693587,
+      "foot_contact_fraction": [
+        0.735,
+        0.56
+      ],
+      "both_feet_contact_fraction": 0.295,
+      "foot_contact_slip_mean_mps": [
+        0.13171933525634713,
+        0.1273973312418093
+      ]
+    },
+    {
+      "segment": "right_0.75",
+      "command_speed": 0.75,
+      "mean_projected_speed": 0.4897444862872362,
+      "mean_velocity_error": 0.38222835269756616,
+      "mean_face_dot": 0.8131817899644375,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 6.443654777934969,
+      "torso_pitch_abs_p95_deg": 8.393720771271797,
+      "torso_roll_abs_p95_deg": 1.7634623479948914,
+      "foot_clearance_p95_m": [
+        0.07441067546606064,
+        0.08602260425686833
+      ],
+      "foot_separation_command_p95_m": 0.33991576433181764,
+      "foot_contact_fraction": [
+        0.64,
+        0.63
+      ],
+      "both_feet_contact_fraction": 0.27,
+      "foot_contact_slip_mean_mps": [
+        0.14689199230815575,
+        0.10254253511730996
+      ]
+    }
+  ],
+  "protocol_note": {
+    "single_trace_only": true,
+    "direction_frame": "world; -x means travel direction, not backward gait",
+    "observation_noise": "unchanged from the task play configuration",
+    "rendering": "recorded policy states; no reference-motion replacement or reset splice"
+  }
+}

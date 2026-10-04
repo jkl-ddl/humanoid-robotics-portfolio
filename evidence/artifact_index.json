@@ -1,0 +1,250 @@
+{
+  "packaged_on": "2026-10-04",
+  "collector_launches_training": false,
+  "seed": 42,
+  "curves": {
+    "steering": {
+      "iteration_first": 30100,
+      "iteration_last": 33495,
+      "logged_iterations": 3396,
+      "scalar_columns": {
+        "mean_reward": "Train/mean_reward",
+        "episode_length": "Train/mean_episode_length",
+        "velocity_error": "Metrics/steering/error_vel_xy",
+        "facing_error": "Metrics/steering/error_face",
+        "slip_logged": "Metrics/slip_velocity_mean",
+        "upright_reward": "Episode_Reward/flat_orientation",
+        "joint_limit_reward": "Episode_Reward/joint_limit",
+        "time_out": "Episode_Termination/time_out",
+        "policy_std": "Policy/mean_std",
+        "value_loss": "Loss/value",
+        "surrogate_loss": "Loss/surrogate",
+        "fps": "Perf/total_fps"
+      },
+      "last_100_logged_values_mean": {
+        "mean_reward": 0.06676529988646507,
+        "episode_length": 199.03170013427734,
+        "velocity_error": 0.23366231590509415,
+        "facing_error": 0.0590108672529459,
+        "slip_logged": 0.16352933436632155,
+        "upright_reward": -0.0017171565908938647,
+        "joint_limit_reward": -9.563297498971224e-05,
+        "time_out": 0.11578618936240673,
+        "policy_std": 0.3000001013278961,
+        "value_loss": 9.960391762433573e-05,
+        "surrogate_loss": -0.015445696916431188,
+        "fps": 10677.69
+      },
+      "resume_seams": [
+        {
+          "iteration": 30499,
+          "run": "steering_noarm_parent"
+        },
+        {
+          "iteration": 30998,
+          "run": "steering_mild"
+        },
+        {
+          "iteration": 31997,
+          "run": "steering_balance_parent"
+        },
+        {
+          "iteration": 32496,
+          "run": "steering_velocity_scale2"
+        }
+      ],
+      "history_note": "Selected resume branch only; repeated iteration labels use the later run, and abandoned updates are excluded."
+    },
+    "celebration": {
+      "iteration_first": 0,
+      "iteration_last": 19999,
+      "logged_iterations": 20000,
+      "scalar_columns": {
+        "mean_reward": "Train/mean_reward",
+        "episode_length": "Train/mean_episode_length",
+        "body_pos_error": "Metrics/motion/error_body_pos",
+        "body_rot_error": "Metrics/motion/error_body_rot",
+        "joint_pos_error": "Metrics/motion/error_joint_pos",
+        "joint_vel_error": "Metrics/motion/error_joint_vel",
+        "anchor_pos_error": "Metrics/motion/error_anchor_pos",
+        "anchor_rot_error": "Metrics/motion/error_anchor_rot",
+        "time_out": "Episode_Termination/time_out",
+        "ee_body_pos_termination": "Episode_Termination/ee_body_pos",
+        "policy_std": "Policy/mean_std",
+        "value_loss": "Loss/value",
+        "surrogate_loss": "Loss/surrogate",
+        "fps": "Perf/total_fps"
+      },
+      "last_100_logged_values_mean": {
+        "mean_reward": 31.365550727844237,
+        "episode_length": 491.26939971923827,
+        "body_pos_error": 0.06943439844995737,
+        "body_rot_error": 0.19211768463253975,
+        "joint_pos_error": 0.8414653140306473,
+        "joint_vel_error": 8.163790173530579,
+        "anchor_pos_error": 0.6855365055799484,
+        "anchor_rot_error": 0.09814487114548683,
+        "time_out": 0.9703967505693436,
+        "ee_body_pos_termination": 0.028428142014890908,
+        "policy_std": 0.3201082456111908,
+        "value_loss": 0.01867552349343896,
+        "surrogate_loss": -0.012359825894236565,
+        "fps": 5567.48
+      }
+    },
+    "badminton": {
+      "iteration_first": 3994,
+      "iteration_last": 4493,
+      "logged_iterations": 500,
+      "scalar_columns": {
+        "mean_reward": "Train/mean_reward",
+        "episode_length": "Train/mean_episode_length",
+        "body_pos_error": "Metrics/motion/error_body_pos",
+        "body_rot_error": "Metrics/motion/error_body_rot",
+        "joint_pos_error": "Metrics/motion/error_joint_pos",
+        "joint_vel_error": "Metrics/motion/error_joint_vel",
+        "anchor_pos_error": "Metrics/motion/error_anchor_pos",
+        "anchor_rot_error": "Metrics/motion/error_anchor_rot",
+        "time_out": "Episode_Termination/time_out",
+        "ee_body_pos_termination": "Episode_Termination/ee_body_pos",
+        "surrogate_loss": "Loss/surrogate",
+        "fps": "Perf/total_fps"
+      },
+      "last_100_logged_values_mean": {
+        "mean_reward": 15.170691366195678,
+        "episode_length": 310.82349975585936,
+        "body_pos_error": 0.18731438733637332,
+        "body_rot_error": 0.6026935917139054,
+        "joint_pos_error": 1.3712666738033295,
+        "joint_vel_error": 14.655932455062866,
+        "anchor_pos_error": 0.597864480316639,
+        "anchor_rot_error": 0.273348371386528,
+        "time_out": 0.47750001311302187,
+        "ee_body_pos_termination": 0.7750000235438347,
+        "surrogate_loss": -0.01815275521017611,
+        "fps": 3329.23
+      }
+    },
+    "taunt": {
+      "iteration_first": 0,
+      "iteration_last": 7996,
+      "logged_iterations": 7997,
+      "scalar_columns": {
+        "mean_reward": "Train/mean_reward",
+        "episode_length": "Train/mean_episode_length",
+        "body_pos_error": "Metrics/motion/error_body_pos",
+        "body_rot_error": "Metrics/motion/error_body_rot",
+        "joint_pos_error": "Metrics/motion/error_joint_pos",
+        "joint_vel_error": "Metrics/motion/error_joint_vel",
+        "anchor_pos_error": "Metrics/motion/error_anchor_pos",
+        "anchor_rot_error": "Metrics/motion/error_anchor_rot",
+        "joint_limit_reward": "Episode_Reward/joint_limit",
+        "time_out": "Episode_Termination/time_out",
+        "ee_body_pos_termination": "Episode_Termination/ee_body_pos",
+        "policy_std": "Policy/mean_std",
+        "value_loss": "Loss/value",
+        "surrogate_loss": "Loss/surrogate",
+        "fps": "Perf/total_fps"
+      },
+      "last_100_logged_values_mean": {
+        "mean_reward": 26.551976051330566,
+        "episode_length": 430.61750061035156,
+        "body_pos_error": 0.1564937077462673,
+        "body_rot_error": 0.34444476455450057,
+        "joint_pos_error": 1.2631225860118866,
+        "joint_vel_error": 16.369296388626097,
+        "anchor_pos_error": 0.2921863625943661,
+        "anchor_rot_error": 0.2866055782139301,
+        "joint_limit_reward": -0.04189152669161558,
+        "time_out": 0.7713110572099686,
+        "ee_body_pos_termination": 0.19817423969507217,
+        "policy_std": 0.7091685712337494,
+        "value_loss": 0.09663619842380285,
+        "surrogate_loss": -0.01665160635486245,
+        "fps": 9958.08
+      },
+      "resume_seams": [
+        {
+          "iteration": 1999,
+          "run": "2026-10-04_01-10-13_taunt_fullstate_officialsmooth_resume1999_1024_seed42"
+        },
+        {
+          "iteration": 3998,
+          "run": "2026-10-04_04-09-58_taunt_anchor2_resume3998_1024_seed42"
+        },
+        {
+          "iteration": 5997,
+          "run": "2026-10-04_06-37-39_taunt_anchor2_resume5997_1024_seed42"
+        }
+      ],
+      "history_note": "Selected resume branch only; repeated iteration labels use the later run, and abandoned updates are excluded."
+    }
+  },
+  "videos": {
+    "steering": {
+      "path": "media/steering.mp4",
+      "sha256": "59170d707d014da153ae81790d47b4fd792ccefe3af2ffb805dba902e2dd334f",
+      "frames": 1000,
+      "fps": 50.0,
+      "duration_seconds": 20.0,
+      "width": 960,
+      "height": 720,
+      "gif_preview_start_seconds": 0,
+      "gif_preview_duration_seconds": 20
+    },
+    "celebration": {
+      "path": "media/celebration.mp4",
+      "sha256": "cad04b424a2d4e7c1cf4d31c0b8ab73e16d4d4985347ee7b365d43eea56e2cca",
+      "frames": 1054,
+      "fps": 50.0,
+      "duration_seconds": 21.08,
+      "width": 960,
+      "height": 720,
+      "gif_preview_start_seconds": 9,
+      "gif_preview_duration_seconds": 8
+    },
+    "badminton": {
+      "path": "media/badminton.mp4",
+      "sha256": "c0ba9e6e8ea4c0101868cd3b5a5b2c3c897b3e11f12986f22dbbcab15da0c799",
+      "frames": 236,
+      "fps": 50.0,
+      "duration_seconds": 4.72,
+      "width": 960,
+      "height": 720,
+      "gif_preview_start_seconds": 0,
+      "gif_preview_duration_seconds": 4.72
+    },
+    "speed_response": {
+      "path": "media/speed_response.mp4",
+      "sha256": "18a10bb2c0a11337b47e62acc3abef1e0ee3bc2c8df40eead101d9405314a484",
+      "frames": 1000,
+      "fps": 50.0,
+      "duration_seconds": 20.0,
+      "width": 960,
+      "height": 720,
+      "gif_preview_start_seconds": 0,
+      "gif_preview_duration_seconds": 20,
+      "checkpoint": "model_29999",
+      "seed": 20260827,
+      "note": "Independent baseline speed-response experiment, not the steering policy. Same recorded states, lighting/ground-only rerender; all 1000 frames reviewed.",
+      "original_video_sha256": "22658d0e86228ed1abb344935b2acc349caa75c5a3250dacbaf8b91a4c414d45",
+      "recorded_states_sha256": "2adbc57aa1ad506a0e9e6318f61460b366bd3a57cec08d341dc9fb69fc89f683",
+      "remaining_issue": "Short initial joint-limit exceedance at frames 5, 6, 10-15, maximum 0.092772 rad; not cropped or corrected in presentation."
+    },
+    "taunt": {
+      "path": "media/taunt.mp4",
+      "sha256": "6277fdc4aa2cc2b8fa58676a905f19c97f95ae026626bed646abafae7b1aea68",
+      "frames": 1190,
+      "fps": 50.0,
+      "duration_seconds": 23.8,
+      "width": 960,
+      "height": 720,
+      "gif_preview_start_seconds": 0,
+      "gif_preview_duration_seconds": 23.8
+    }
+  },
+  "closeout_training": {
+    "taunt": "additional native 1024-env continuation",
+    "steering": "512-env quality continuation; see config boundaries"
+  }
+}

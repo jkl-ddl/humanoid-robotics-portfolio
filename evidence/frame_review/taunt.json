@@ -1,0 +1,264 @@
+{
+  "video": "taunt_anchor2_7996.mp4",
+  "sha256": "6277fdc4aa2cc2b8fa58676a905f19c97f95ae026626bed646abafae7b1aea68",
+  "frames_expected": 1190,
+  "frames_decoded": 1190,
+  "fps": 50.0,
+  "telemetry": "taunt_anchor2_7996_seed42_retained_terms.npz",
+  "sheets": [
+    {
+      "file": "frames_0000_0063.jpg",
+      "first_frame": 0,
+      "last_frame": 63
+    },
+    {
+      "file": "frames_0064_0127.jpg",
+      "first_frame": 64,
+      "last_frame": 127
+    },
+    {
+      "file": "frames_0128_0191.jpg",
+      "first_frame": 128,
+      "last_frame": 191
+    },
+    {
+      "file": "frames_0192_0255.jpg",
+      "first_frame": 192,
+      "last_frame": 255
+    },
+    {
+      "file": "frames_0256_0319.jpg",
+      "first_frame": 256,
+      "last_frame": 319
+    },
+    {
+      "file": "frames_0320_0383.jpg",
+      "first_frame": 320,
+      "last_frame": 383
+    },
+    {
+      "file": "frames_0384_0447.jpg",
+      "first_frame": 384,
+      "last_frame": 447
+    },
+    {
+      "file": "frames_0448_0511.jpg",
+      "first_frame": 448,
+      "last_frame": 511
+    },
+    {
+      "file": "frames_0512_0575.jpg",
+      "first_frame": 512,
+      "last_frame": 575
+    },
+    {
+      "file": "frames_0576_0639.jpg",
+      "first_frame": 576,
+      "last_frame": 639
+    },
+    {
+      "file": "frames_0640_0703.jpg",
+      "first_frame": 640,
+      "last_frame": 703
+    },
+    {
+      "file": "frames_0704_0767.jpg",
+      "first_frame": 704,
+      "last_frame": 767
+    },
+    {
+      "file": "frames_0768_0831.jpg",
+      "first_frame": 768,
+      "last_frame": 831
+    },
+    {
+      "file": "frames_0832_0895.jpg",
+      "first_frame": 832,
+      "last_frame": 895
+    },
+    {
+      "file": "frames_0896_0959.jpg",
+      "first_frame": 896,
+      "last_frame": 959
+    },
+    {
+      "file": "frames_0960_1023.jpg",
+      "first_frame": 960,
+      "last_frame": 1023
+    },
+    {
+      "file": "frames_1024_1087.jpg",
+      "first_frame": 1024,
+      "last_frame": 1087
+    },
+    {
+      "file": "frames_1088_1151.jpg",
+      "first_frame": 1088,
+      "last_frame": 1151
+    },
+    {
+      "file": "frames_1152_1189.jpg",
+      "first_frame": 1152,
+      "last_frame": 1189
+    }
+  ],
+  "visual_review_status": "reviewed_all_1190_frames_accepted_bounded_simulation",
+  "visual_review_notes": "All 19 consecutive sheets (frames 0-1189) actually inspected. Continuous punches, turn, right-leg kick and recovery visible; no fall, reset splice or reference-motion substitution. Original failure terms retained. Residual tracking errors remain; not precise trajectory tracking or a real-robot validation.",
+  "thumbnail_warning": "Consecutive full coverage, magnify flagged frames separately.",
+  "nonfinite_recorded_states": {},
+  "metric_summaries": {
+    "done": {
+      "min": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "maximum_frame": 0,
+      "finite_count": 1190
+    },
+    "motion_frame": {
+      "min": 0.0,
+      "median": 594.5,
+      "p95": 1129.55,
+      "max": 1189.0,
+      "maximum_frame": 1189,
+      "finite_count": 1190
+    },
+    "error_anchor_pos": {
+      "min": 2.3283064365386963e-09,
+      "median": 0.15738020092248917,
+      "p95": 0.3254628702998161,
+      "max": 0.4346426725387573,
+      "maximum_frame": 795,
+      "finite_count": 1190
+    },
+    "error_anchor_rot": {
+      "min": 5.376763922981809e-08,
+      "median": 0.12783010303974152,
+      "p95": 0.36057449281215603,
+      "max": 0.6736953258514404,
+      "maximum_frame": 798,
+      "finite_count": 1190
+    },
+    "error_body_pos": {
+      "min": 5.431625282881214e-08,
+      "median": 0.1161443293094635,
+      "p95": 0.1525446839630603,
+      "max": 0.1894712597131729,
+      "maximum_frame": 402,
+      "finite_count": 1190
+    },
+    "error_joint_pos": {
+      "min": 0.0,
+      "median": 1.012046456336975,
+      "p95": 1.62422838807106,
+      "max": 1.8262875080108643,
+      "maximum_frame": 78,
+      "finite_count": 1190
+    },
+    "quat_norm_error": {
+      "min": 0.0,
+      "median": 0.0,
+      "p95": 1.1920928955078125e-07,
+      "max": 5.364418029785156e-07,
+      "maximum_frame": 0,
+      "finite_count": 1190
+    },
+    "root_tilt_deg": {
+      "min": 0.18345394730567932,
+      "median": 6.1621503829956055,
+      "p95": 13.334581375122069,
+      "max": 27.890779495239258,
+      "maximum_frame": 927,
+      "finite_count": 1190
+    },
+    "root_pitch_deg": {
+      "min": -20.668678283691406,
+      "median": 1.1938352584838867,
+      "p95": 8.104542112350462,
+      "max": 13.482362747192383,
+      "maximum_frame": 997,
+      "finite_count": 1190
+    },
+    "root_roll_deg": {
+      "min": -19.404783248901367,
+      "median": -4.789714813232422,
+      "p95": -0.5148414701223397,
+      "max": 3.9320125579833984,
+      "maximum_frame": 716,
+      "finite_count": 1190
+    },
+    "root_height_m": {
+      "min": 0.9200338125228882,
+      "median": 0.9906232059001923,
+      "p95": 1.0113776564598083,
+      "max": 1.0944310426712036,
+      "maximum_frame": 0,
+      "finite_count": 1190
+    },
+    "root_xy_displacement_from_start_m": {
+      "min": 0.0,
+      "median": 0.1915685534477234,
+      "p95": 0.8677052170038221,
+      "max": 0.9552708268165588,
+      "maximum_frame": 887,
+      "finite_count": 1190
+    },
+    "root_speed_mps": {
+      "min": 0.01157268788665533,
+      "median": 0.2222437635064125,
+      "p95": 0.7797395795583725,
+      "max": 1.3299635648727417,
+      "maximum_frame": 803,
+      "finite_count": 1190
+    },
+    "joint_max_abs_velocity_proxy_rad_s": {
+      "min": 0.21301619708538055,
+      "median": 3.4760700464248657,
+      "p95": 8.46072268486023,
+      "max": 16.81568717956543,
+      "maximum_frame": 912,
+      "finite_count": 1190
+    },
+    "max_xml_joint_limit_excess_rad": {
+      "min": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0003650423526763702,
+      "maximum_frame": 718,
+      "finite_count": 1190
+    },
+    "left_fk_site_height_m": {
+      "min": 0.06301634367878983,
+      "median": 0.06654941066381462,
+      "p95": 0.09691604457919896,
+      "max": 0.1515483484825313,
+      "maximum_frame": 0,
+      "finite_count": 1190
+    },
+    "left_fk_site_speed_xy_proxy_mps": {
+      "min": 1.2238010861273148e-05,
+      "median": 0.02057966636537857,
+      "p95": 1.2344877221717638,
+      "max": 4.711979553750993,
+      "maximum_frame": 957,
+      "finite_count": 1190
+    },
+    "right_fk_site_height_m": {
+      "min": 0.06440618456972036,
+      "median": 0.06697113029981369,
+      "p95": 0.13489972987914006,
+      "max": 1.418306093541343,
+      "maximum_frame": 927,
+      "finite_count": 1190
+    },
+    "right_fk_site_speed_xy_proxy_mps": {
+      "min": 2.1082566530828176e-05,
+      "median": 0.02723799694739027,
+      "p95": 2.0466365204667967,
+      "max": 7.618153099034735,
+      "maximum_frame": 915,
+      "finite_count": 1190
+    }
+  },
+  "fk_note": "Static XML site/limit diagnostics; no physics replay or true contact estimate."
+}

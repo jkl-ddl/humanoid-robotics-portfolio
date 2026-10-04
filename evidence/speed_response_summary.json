@@ -1,0 +1,96 @@
+{
+  "replay_frame_count": 1000,
+  "settle_frames": 25,
+  "segments": [
+    {
+      "segment": 0,
+      "start_step": 0,
+      "end_step_exclusive": 125,
+      "steady_start_step": 25,
+      "target_mps": 2.0,
+      "actual_mean_mps": 1.5350786238908767,
+      "actual_std_mps": 0.35071301600981925,
+      "mae_mps": 0.46512425124645235,
+      "tracking_ratio": 0.7675393119454383
+    },
+    {
+      "segment": 1,
+      "start_step": 125,
+      "end_step_exclusive": 250,
+      "steady_start_step": 150,
+      "target_mps": 1.0,
+      "actual_mean_mps": 1.2481599020957947,
+      "actual_std_mps": 0.10804266242277381,
+      "mae_mps": 0.24815990209579467,
+      "tracking_ratio": 1.2481599020957947
+    },
+    {
+      "segment": 2,
+      "start_step": 250,
+      "end_step_exclusive": 375,
+      "steady_start_step": 275,
+      "target_mps": 1.5,
+      "actual_mean_mps": 1.4908408772945405,
+      "actual_std_mps": 0.08218423852730483,
+      "mae_mps": 0.06709039568901062,
+      "tracking_ratio": 0.9938939181963603
+    },
+    {
+      "segment": 3,
+      "start_step": 375,
+      "end_step_exclusive": 500,
+      "steady_start_step": 400,
+      "target_mps": 2.5,
+      "actual_mean_mps": 2.119629054069519,
+      "actual_std_mps": 0.15106142351192242,
+      "mae_mps": 0.38037094593048093,
+      "tracking_ratio": 0.8478516216278076
+    },
+    {
+      "segment": 4,
+      "start_step": 500,
+      "end_step_exclusive": 625,
+      "steady_start_step": 525,
+      "target_mps": 3.0,
+      "actual_mean_mps": 2.6830803632736204,
+      "actual_std_mps": 0.07570380620665099,
+      "mae_mps": 0.3169196367263794,
+      "tracking_ratio": 0.8943601210912068
+    },
+    {
+      "segment": 5,
+      "start_step": 625,
+      "end_step_exclusive": 750,
+      "steady_start_step": 650,
+      "target_mps": 1.5,
+      "actual_mean_mps": 1.6413028454780578,
+      "actual_std_mps": 0.14832987519450946,
+      "mae_mps": 0.1548199200630188,
+      "tracking_ratio": 1.094201896985372
+    },
+    {
+      "segment": 6,
+      "start_step": 750,
+      "end_step_exclusive": 875,
+      "steady_start_step": 775,
+      "target_mps": 2.0,
+      "actual_mean_mps": 1.8294525802135468,
+      "actual_std_mps": 0.08980106457348398,
+      "mae_mps": 0.170631023645401,
+      "tracking_ratio": 0.9147262901067734
+    },
+    {
+      "segment": 7,
+      "start_step": 875,
+      "end_step_exclusive": 1000,
+      "steady_start_step": 900,
+      "target_mps": 2.5,
+      "actual_mean_mps": 2.2197765588760374,
+      "actual_std_mps": 0.09560527060432024,
+      "mae_mps": 0.2802234411239624,
+      "tracking_ratio": 0.887910623550415
+    }
+  ],
+  "steady_mae_mps": 0.2604174395650625,
+  "target_actual_correlation": 0.8904942665191551
+}

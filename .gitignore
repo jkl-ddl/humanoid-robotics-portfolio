@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+checkpoints/
+datasets/
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.usd
+*.usda
+*.usdc

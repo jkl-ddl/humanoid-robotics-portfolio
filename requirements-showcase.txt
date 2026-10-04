@@ -1,0 +1,5 @@
+numpy>=1.24
+matplotlib>=3.7
+tensorboard>=2.14
+opencv-python>=4.8
+imageio-ffmpeg>=0.5

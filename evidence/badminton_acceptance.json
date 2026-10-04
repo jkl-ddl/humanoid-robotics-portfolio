@@ -1,0 +1,46 @@
+{
+  "motion": "badminton_v2_grounded_official_perframe",
+  "checkpoint": "model_4493.pt",
+  "evaluation_device": "cpu PhysX / CPU policy (runtime recovery audit)",
+  "requested_start_frame": 40,
+  "frames": 236,
+  "first_done_frame": null,
+  "first_termination_frame": {
+    "anchor_pos": null,
+    "anchor_ori": null,
+    "ee_body_pos": null,
+    "time_out": null
+  },
+  "max_anchor_error_z_m": 0.05027425289154053,
+  "max_anchor_error_ori_deg": 15.608227729797363,
+  "max_ee_error_z_each_m": [
+    0.05376724898815155,
+    0.07297396659851074,
+    0.07963371276855469,
+    0.1105719804763794
+  ],
+  "foot_body_z_min_m": [
+    0.03398340940475464,
+    0.03499344736337662
+  ],
+  "foot_body_z_max_m": [
+    0.07432558387517929,
+    0.10763135552406311
+  ],
+  "root_link_com_z_delta_max_m": 0.07597100734710693,
+  "foot_contact_force_max_N": [
+    705.0902099609375,
+    601.8711547851562
+  ],
+  "foot_contact_frames_force_gt_1N": [
+    225,
+    213
+  ],
+  "gates": {
+    "minimum_continuous_frames": true,
+    "anchor_z_limit": true,
+    "anchor_orientation_limit": true,
+    "no_termination": true
+  },
+  "pass": true
+}

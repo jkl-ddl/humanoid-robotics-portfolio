@@ -1,0 +1,16 @@
+{
+  "checkpoint": "model_19999.pt",
+  "motion": "EngineAI dance_t800",
+  "num_envs_training": 1024,
+  "training_iterations": 20000,
+  "seed": 42,
+  "visualized_state_frames": 1054,
+  "joint_count": 25,
+  "root_height_range_m": [
+    0.8680000901222229,
+    1.0308806896209717
+  ],
+  "failure_resets_disabled": [],
+  "classification": "trained-policy state visualization; see separate retained-termination acceptance",
+  "visualization_protocol": "fixed motion frame 0; perturbations/noise off; extended episode; original failure terms retained if disabled list is empty"
+}

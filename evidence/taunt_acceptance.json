@@ -1,0 +1,38 @@
+{
+  "checkpoint": "model_7996.pt",
+  "motion": "taunt_M_Move7_t800.npz",
+  "seed": 42,
+  "start_frame": 0,
+  "requested_frames": 1190,
+  "continuous_frames_before_first_termination": 1190,
+  "control_dt": 0.02,
+  "first_termination": null,
+  "active_termination_terms": [
+    "time_out",
+    "anchor_pos",
+    "anchor_ori",
+    "ee_body_pos"
+  ],
+  "failure_resets_disabled": [],
+  "reset_cache_refreshed_at_same_reference_frame": true,
+  "time_horizon_extended_to_one_motion": true,
+  "ee_failure_diagnostic_before_autoreset": null,
+  "failure_thresholds": {
+    "anchor_height_m": 0.35,
+    "ee_height_m": 0.35,
+    "anchor_projected_gravity_difference": 0.8
+  },
+  "error_max": {
+    "error_anchor_pos": 0.4346426725387573,
+    "error_anchor_rot": 0.6736953258514404,
+    "error_body_pos": 0.1894712597131729,
+    "error_joint_pos": 1.8262875080108643
+  },
+  "error_mean": {
+    "error_anchor_pos": 0.16758637532724865,
+    "error_anchor_rot": 0.14907140028915966,
+    "error_body_pos": 0.11558110585516179,
+    "error_joint_pos": 1.0916185979958342
+  },
+  "all_recorded_states_finite": true
+}

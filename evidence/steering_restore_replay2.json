@@ -1,0 +1,140 @@
+{
+  "checkpoint": "/checkpoint/model_33495.pt",
+  "seed": 42,
+  "step_dt": 0.02,
+  "steps_per_command": 200,
+  "transition_steps": 50,
+  "first_termination": null,
+  "continuous_steps_before_first_termination": 1000,
+  "requested_steps": 1000,
+  "command_observation_refreshed_before_policy": true,
+  "command_observation_max_error": 0.0,
+  "random_command_resampling_disabled": true,
+  "segments": [
+    {
+      "segment": "forward_0.5",
+      "command_speed": 0.5,
+      "mean_projected_speed": 0.538170827999711,
+      "mean_velocity_error": 0.1924671086948365,
+      "mean_face_dot": 0.999278764128685,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 9.172217957126367,
+      "torso_pitch_abs_p95_deg": 18.847623561799622,
+      "torso_roll_abs_p95_deg": 5.364269659140037,
+      "foot_clearance_p95_m": [
+        0.0717837020754814,
+        0.07885177955031392
+      ],
+      "foot_separation_command_p95_m": 0.3100457310676574,
+      "foot_contact_fraction": [
+        0.62,
+        0.58
+      ],
+      "both_feet_contact_fraction": 0.215,
+      "foot_contact_slip_mean_mps": [
+        0.11695272693102579,
+        0.07849639620037814
+      ]
+    },
+    {
+      "segment": "forward_1.0",
+      "command_speed": 1.0,
+      "mean_projected_speed": 0.7225929036736488,
+      "mean_velocity_error": 0.30765768725425,
+      "mean_face_dot": 0.9991235360503197,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 7.427196289595639,
+      "torso_pitch_abs_p95_deg": 9.282195492422414,
+      "torso_roll_abs_p95_deg": 2.5425971063952715,
+      "foot_clearance_p95_m": [
+        0.08253992497920985,
+        0.08442585915327071
+      ],
+      "foot_separation_command_p95_m": 0.4287260174751282,
+      "foot_contact_fraction": [
+        0.585,
+        0.525
+      ],
+      "both_feet_contact_fraction": 0.11,
+      "foot_contact_slip_mean_mps": [
+        0.09757570638624816,
+        0.09595245025120676
+      ]
+    },
+    {
+      "segment": "left_0.75",
+      "command_speed": 0.75,
+      "mean_projected_speed": 0.5668040549755097,
+      "mean_velocity_error": 0.37021055810153486,
+      "mean_face_dot": 0.861130666732788,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 6.803218691046547,
+      "torso_pitch_abs_p95_deg": 9.857820655716592,
+      "torso_roll_abs_p95_deg": 2.1178455071257276,
+      "foot_clearance_p95_m": [
+        0.07665330469608306,
+        0.08238207474350928
+      ],
+      "foot_separation_command_p95_m": 0.3429886832833289,
+      "foot_contact_fraction": [
+        0.66,
+        0.56
+      ],
+      "both_feet_contact_fraction": 0.22,
+      "foot_contact_slip_mean_mps": [
+        0.14219333084518881,
+        0.11922533236377474
+      ]
+    },
+    {
+      "segment": "backward_0.75",
+      "command_speed": 0.75,
+      "mean_projected_speed": 0.3968702779337764,
+      "mean_velocity_error": 0.4335896776802838,
+      "mean_face_dot": 0.8208737443387508,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 6.202577985530406,
+      "torso_pitch_abs_p95_deg": 8.533731666473466,
+      "torso_roll_abs_p95_deg": 2.20285614395331,
+      "foot_clearance_p95_m": [
+        0.06460718885064125,
+        0.07970949932932848
+      ],
+      "foot_separation_command_p95_m": 0.3321370363235473,
+      "foot_contact_fraction": [
+        0.74,
+        0.605
+      ],
+      "both_feet_contact_fraction": 0.345,
+      "foot_contact_slip_mean_mps": [
+        0.12066254926842679,
+        0.1007652769042256
+      ]
+    },
+    {
+      "segment": "right_0.75",
+      "command_speed": 0.75,
+      "mean_projected_speed": 0.39439177729189395,
+      "mean_velocity_error": 0.4423209244757891,
+      "mean_face_dot": 0.8161321726441383,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 6.279757648257577,
+      "torso_pitch_abs_p95_deg": 7.714253424572882,
+      "torso_roll_abs_p95_deg": 1.813644857732715,
+      "foot_clearance_p95_m": [
+        0.06836590021848678,
+        0.07677611783146858
+      ],
+      "foot_separation_command_p95_m": 0.2973575312117039,
+      "foot_contact_fraction": [
+        0.715,
+        0.645
+      ],
+      "both_feet_contact_fraction": 0.36,
+      "foot_contact_slip_mean_mps": [
+        0.1510420401199636,
+        0.07881426925467717
+      ]
+    }
+  ]
+}

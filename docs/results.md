@@ -39,6 +39,8 @@
 
 早期严格的“每脚滑速<0.11m/s、每脚抬高>0.08m”并未全部达到，不能标作严格门禁通过。本次交付范围明确为平地、平滑转向的连续仿真实践；不是急转、精准导航、零滑移或实机可靠性的验证。
 
+**线上恢复复跑的限制：** 同日从GitHub重新下载相配源码/模型/prior，在同一固定Docker镜像与seed42下再执行两次，均完成1000步、无终止、actor指令误差0，但最后转向段均速分别为0.223/0.394m/s，原视频对应0.490m/s。前400步状态几乎相同，后续转弯分化。上游[MjLab FAQ](https://mujocolab.github.io/mjlab/v1.1.1/source/faq.html#why-aren-t-my-training-runs-reproducible-even-with-a-fixed-seed)说明GPU仿真不保证确定性；这是相容解释，不是本次唯一根因的证明。复跑记录见[第一次](../evidence/steering_restore_replay1.json)、[第二次](../evidence/steering_restore_replay2.json)。这也说明当前策略对转弯轨迹变化敏感，展示成功不能替代稳定速度控制验收；上表仅描述实际展示视频，不当作多次测试均值。
+
 脚滑基于真实接触与足底 site 水平速度；抬脚高度为 site 地形高度相对该段最低值的 P95；`foot_separation_command_p95_m` 是两脚沿指令方向的间距，不是完整一步的步长。这些定义保留在 [评估脚本](../code/eval_t800_steering.py) 与 [原始指标](../evidence/steering_metrics.json) 中。
 
 ## T800：目标速度响应补充

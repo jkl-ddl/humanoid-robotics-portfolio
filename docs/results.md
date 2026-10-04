@@ -43,6 +43,8 @@
 
 脚滑基于真实接触与足底 site 水平速度；抬脚高度为 site 地形高度相对该段最低值的 P95；`foot_separation_command_p95_m` 是两脚沿指令方向的间距，不是完整一步的步长。这些定义保留在 [评估脚本](../code/eval_t800_steering.py) 与 [原始指标](../evidence/steering_metrics.json) 中。
 
+**后续发现的prior契约错误：** 上述33495历史策略的实际运动记录保留，但其SMP在线EE使用腰/腕，walk12训练数据的EE却是base/肘，不能称整套feature语义已匹配。固定同一物理轨迹与噪声，仅按原包定义重建特征，raw SMP均值由0.052–0.063降至0.025–0.037；参考数据本身按正确映射做FK，256个窗口尾帧最大EE距离约1.1e-6m。对照见[旧映射](../evidence/steering_prior_support_wrong_ee.json)、[原包映射](../evidence/steering_prior_support_walk12_ee.json)。`--prior-ee-contract walk12`显式恢复原定义，默认configured保留历史回放行为。这是评分错误的证据，尚不等于策略质量改善或所有早期失败根因已查清。
+
 ## T800：目标速度响应补充
 
 这是同伴交付的行走基线 `model_29999`，不是转向模型。50 Hz，随机种子 20260827，每 125 步切换一次，共 1000 步。命令序列 2.0→1.0→1.5→2.5→3.0→1.5→2.0→2.5 m/s。

@@ -164,6 +164,7 @@ def main() -> None:
   )
   parser.add_argument("--task-id", default="Smp-Steering-T800")
   parser.add_argument("--seed", type=int, default=42)
+  parser.add_argument("--prior-ee-contract", choices=("configured", "walk12"), default="configured")
   parser.add_argument("--no-video", action="store_true", help="Save real policy states for separate rendering.")
   parser.add_argument(
     "--segments",
@@ -179,6 +180,9 @@ def main() -> None:
 
   task_id = args.task_id
   env_cfg = load_env_cfg(task_id, play=True)
+  if args.prior_ee_contract == "walk12":
+    from prior_contract import apply_walk12_prior_contract
+    apply_walk12_prior_contract(env_cfg)
   agent_cfg = load_rl_cfg(task_id)
   env_cfg.scene.num_envs = 1
   env_cfg.seed = args.seed
@@ -338,6 +342,8 @@ def main() -> None:
   output = {
     "checkpoint": str(args.checkpoint.resolve()),
     "seed": args.seed,
+    "prior_ee_contract": args.prior_ee_contract,
+    "prior_ee_body_names": list(env.unwrapped._smp_ee_body_names),
     "step_dt": float(env.unwrapped.step_dt),
     "steps_per_command": args.steps_per_command,
     "transition_steps": args.transition_steps,

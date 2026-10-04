@@ -5,8 +5,10 @@
   "curves": {
     "steering": {
       "iteration_first": 30100,
-      "iteration_last": 33495,
-      "logged_iterations": 3396,
+      "iteration_last": 36991,
+      "logged_iterations": 6892,
+      "actual_updates_selected_chain": 6900,
+      "new_quality_updates": 6500,
       "scalar_columns": {
         "mean_reward": "Train/mean_reward",
         "episode_length": "Train/mean_episode_length",
@@ -22,18 +24,18 @@
         "fps": "Perf/total_fps"
       },
       "last_100_logged_values_mean": {
-        "mean_reward": 0.06676529988646507,
-        "episode_length": 199.03170013427734,
-        "velocity_error": 0.23366231590509415,
-        "facing_error": 0.0590108672529459,
-        "slip_logged": 0.16352933436632155,
-        "upright_reward": -0.0017171565908938647,
-        "joint_limit_reward": -9.563297498971224e-05,
-        "time_out": 0.11578618936240673,
+        "mean_reward": 0.08642291463911533,
+        "episode_length": 233.76339981079101,
+        "velocity_error": 0.2768640246987343,
+        "facing_error": 0.07820233579725028,
+        "slip_logged": 0.14710023313760756,
+        "upright_reward": -0.002500307480804622,
+        "joint_limit_reward": -7.315228351217228e-05,
+        "time_out": 0.15008177887648344,
         "policy_std": 0.3000001013278961,
-        "value_loss": 9.960391762433573e-05,
-        "surrogate_loss": -0.015445696916431188,
-        "fps": 10677.69
+        "value_loss": 0.00011847727801068686,
+        "surrogate_loss": -0.016495754709467292,
+        "fps": 8990.49
       },
       "resume_seams": [
         {
@@ -51,6 +53,22 @@
         {
           "iteration": 32496,
           "run": "steering_velocity_scale2"
+        },
+        {
+          "iteration": 33495,
+          "run": "steering_walk12_contract"
+        },
+        {
+          "iteration": 34494,
+          "run": "steering_walk12_vmix75"
+        },
+        {
+          "iteration": 35493,
+          "run": "steering_walk12_feet"
+        },
+        {
+          "iteration": 36492,
+          "run": "steering_walk12_slip10"
         }
       ],
       "history_note": "Selected resume branch only; repeated iteration labels use the later run, and abandoned updates are excluded."
@@ -183,7 +201,7 @@
   "videos": {
     "steering": {
       "path": "media/steering.mp4",
-      "sha256": "59170d707d014da153ae81790d47b4fd792ccefe3af2ffb805dba902e2dd334f",
+      "sha256": "cf6c59b8781a0257f738195e62abe44e5c3c8279e7d4bbfa5a47c95d86509159",
       "frames": 1000,
       "fps": 50.0,
       "duration_seconds": 20.0,
@@ -191,6 +209,20 @@
       "height": 720,
       "gif_preview_start_seconds": 0,
       "gif_preview_duration_seconds": 20
+    },
+    "steering_fixed075": {
+      "path": "media/steering_fixed075.mp4",
+      "sha256": "9798bd71d60641b0b6ddd58e4338948e319d02c2a93a32198ac2a7c4b30852c4",
+      "frames": 500,
+      "fps": 50.0,
+      "duration_seconds": 10.0,
+      "width": 960,
+      "height": 720,
+      "gif_preview_start_seconds": 0,
+      "gif_preview_duration_seconds": 10,
+      "checkpoint": "model_36991",
+      "seed": 42,
+      "note": "Original fixed +x 0.75 m/s, 500-step gait gate passed; all frames actually viewed. Not an all-turn or all-random-start success claim."
     },
     "celebration": {
       "path": "media/celebration.mp4",

@@ -1,0 +1,161 @@
+{
+  "video": "steering_walk12_slip10_36991_fixed075.mp4",
+  "sha256": "9798bd71d60641b0b6ddd58e4338948e319d02c2a93a32198ac2a7c4b30852c4",
+  "frames_expected": 500,
+  "frames_decoded": 500,
+  "fps": 50.0,
+  "telemetry": "policy_states.npz",
+  "sheets": [
+    {
+      "file": "frames_0000_0063.jpg",
+      "first_frame": 0,
+      "last_frame": 63
+    },
+    {
+      "file": "frames_0064_0127.jpg",
+      "first_frame": 64,
+      "last_frame": 127
+    },
+    {
+      "file": "frames_0128_0191.jpg",
+      "first_frame": 128,
+      "last_frame": 191
+    },
+    {
+      "file": "frames_0192_0255.jpg",
+      "first_frame": 192,
+      "last_frame": 255
+    },
+    {
+      "file": "frames_0256_0319.jpg",
+      "first_frame": 256,
+      "last_frame": 319
+    },
+    {
+      "file": "frames_0320_0383.jpg",
+      "first_frame": 320,
+      "last_frame": 383
+    },
+    {
+      "file": "frames_0384_0447.jpg",
+      "first_frame": 384,
+      "last_frame": 447
+    },
+    {
+      "file": "frames_0448_0499.jpg",
+      "first_frame": 448,
+      "last_frame": 499
+    }
+  ],
+  "visual_review_status": "all_500_frames_viewed_fixed_forward_gate_passed",
+  "visual_review_note": "All eight consecutive sheets were viewed, with frame 0 magnified. Alternating steps, visible ground, no fall or reset splice. Startup forward lean is retained; numeric XML joint-limit excess is zero. This is the fixed +x 0.75 m/s gate, not a claim about all turns or random starts.",
+  "thumbnail_warning": "Consecutive full coverage, magnify flagged frames separately.",
+  "nonfinite_recorded_states": {},
+  "metric_summaries": {
+    "quat_norm_error": {
+      "min": 0.0,
+      "median": 0.0,
+      "p95": 1.1920928955078125e-07,
+      "max": 1.1920928955078125e-07,
+      "maximum_frame": 3,
+      "finite_count": 500
+    },
+    "root_tilt_deg": {
+      "min": 7.706399440765381,
+      "median": 8.960205078125,
+      "p95": 14.593397426605204,
+      "max": 25.869531631469727,
+      "maximum_frame": 0,
+      "finite_count": 500
+    },
+    "root_pitch_deg": {
+      "min": 7.632236480712891,
+      "median": 8.872175693511963,
+      "p95": 14.547378873825052,
+      "max": 25.3369140625,
+      "maximum_frame": 0,
+      "finite_count": 500
+    },
+    "root_roll_deg": {
+      "min": -1.9387774467468262,
+      "median": 0.8719983696937561,
+      "p95": 2.747219777107239,
+      "max": 6.373687744140625,
+      "maximum_frame": 3,
+      "finite_count": 500
+    },
+    "root_height_m": {
+      "min": 0.9892370104789734,
+      "median": 1.0001712441444397,
+      "p95": 1.0067588210105896,
+      "max": 1.0551834106445312,
+      "maximum_frame": 0,
+      "finite_count": 500
+    },
+    "root_xy_displacement_from_start_m": {
+      "min": 0.0,
+      "median": 3.7267528772354126,
+      "p95": 7.092916202545165,
+      "max": 7.367517471313477,
+      "maximum_frame": 499,
+      "finite_count": 500
+    },
+    "root_speed_mps": {
+      "min": 0.5322186350822449,
+      "median": 0.7456900477409363,
+      "p95": 0.9989687561988829,
+      "max": 1.0932847261428833,
+      "maximum_frame": 364,
+      "finite_count": 500
+    },
+    "joint_max_abs_velocity_proxy_rad_s": {
+      "min": 0.8318849205970764,
+      "median": 2.009097456932068,
+      "p95": 4.128935480117796,
+      "max": 10.078072547912598,
+      "maximum_frame": 0,
+      "finite_count": 500
+    },
+    "max_xml_joint_limit_excess_rad": {
+      "min": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0,
+      "maximum_frame": 0,
+      "finite_count": 500
+    },
+    "left_fk_site_height_m": {
+      "min": 0.06262649202634363,
+      "median": 0.09020690448162931,
+      "p95": 0.14431393477972612,
+      "max": 0.2024409294873806,
+      "maximum_frame": 0,
+      "finite_count": 500
+    },
+    "left_fk_site_speed_xy_proxy_mps": {
+      "min": 0.0008687842757504758,
+      "median": 0.24967495270297743,
+      "p95": 2.3173387756961827,
+      "max": 2.894489534874232,
+      "maximum_frame": 36,
+      "finite_count": 500
+    },
+    "right_fk_site_height_m": {
+      "min": 0.06004281960382749,
+      "median": 0.08298894931167372,
+      "p95": 0.15229606505614693,
+      "max": 0.16398106376851568,
+      "maximum_frame": 161,
+      "finite_count": 500
+    },
+    "right_fk_site_speed_xy_proxy_mps": {
+      "min": 0.0010693939886995852,
+      "median": 0.33573428930962207,
+      "p95": 2.1888184151042203,
+      "max": 3.1641041847319857,
+      "maximum_frame": 20,
+      "finite_count": 500
+    }
+  },
+  "fk_note": "Static XML site/limit diagnostics; no physics replay or true contact estimate."
+}

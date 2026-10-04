@@ -1,0 +1,48 @@
+{
+  "checkpoint": "/checkpoint/model_36991.pt",
+  "seed": 42,
+  "prior_ee_contract": "walk12",
+  "prior_ee_body_names": [
+    "LINK_ANKLE_ROLL_L",
+    "LINK_ANKLE_ROLL_R",
+    "LINK_BASE",
+    "LINK_ELBOW_YAW_L",
+    "LINK_ELBOW_YAW_R"
+  ],
+  "step_dt": 0.02,
+  "steps_per_command": 500,
+  "transition_steps": 50,
+  "first_termination": null,
+  "continuous_steps_before_first_termination": 500,
+  "requested_steps": 500,
+  "command_observation_refreshed_before_policy": true,
+  "command_observation_max_error": 0.0,
+  "random_command_resampling_disabled": true,
+  "segments": [
+    {
+      "segment": "forward_0.75",
+      "command_speed": 0.75,
+      "mean_projected_speed": 0.7384432263374329,
+      "mean_velocity_error": 0.19591869738139212,
+      "mean_face_dot": 0.9983468232154846,
+      "termination_count": 0,
+      "torso_pitch_mean_deg": 9.415317670563075,
+      "torso_pitch_abs_p95_deg": 14.592828508439629,
+      "torso_roll_abs_p95_deg": 3.09398457502338,
+      "foot_clearance_p95_m": [
+        0.08168743997812271,
+        0.09225325807929034
+      ],
+      "foot_separation_command_p95_m": 0.4190807197242975,
+      "foot_contact_fraction": [
+        0.544,
+        0.548
+      ],
+      "both_feet_contact_fraction": 0.098,
+      "foot_contact_slip_mean_mps": [
+        0.08834587322909261,
+        0.10273254274917056
+      ]
+    }
+  ]
+}

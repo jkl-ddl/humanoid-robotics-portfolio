@@ -313,8 +313,8 @@ def main() -> None:
     plot_csv("steering", [
         ("mean_reward", "Episode reward", "Logged reward"),
         ("episode_length", "Episode length", "Control steps"),
-        ("velocity_error", "Command velocity error", "m/s (logger definition)"),
-        ("facing_error", "Facing error", "Logged error"),
+        ("velocity_error", "Accumulated command-velocity error", "sum(error) / max command steps (m/s)"),
+        ("facing_error", "Accumulated facing error", "sum(error) / max command steps"),
     ], "T800 natural steering | 512 envs, seed 42 | selected warm-start history")
     plot_csv("badminton", [
         ("mean_reward", "Episode reward", "Logged reward"),
